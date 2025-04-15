@@ -94,14 +94,15 @@ def extraer_attack_speed() -> float:
 
 def auto_kiter(activador: Activador) -> None:
     attack_speed = extraer_attack_speed()
-
     print('El attack speed es igual a', attack_speed)
-    windup_percentage = 0.1533 + 0.15
+
+    ping = 0.008
+    windup_percentage = 0.27
     tiempo_entre_basicos = 1/attack_speed
     print('El tiempo entre basicos sera de', tiempo_entre_basicos)
+
     windup_time = tiempo_entre_basicos * windup_percentage
     print('El tiempo de animacion sera de', windup_time)
-    walking_time = tiempo_entre_basicos - windup_time
 
     last_attack_time = time.perf_counter() 
     while True:
