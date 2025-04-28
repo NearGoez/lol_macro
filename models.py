@@ -2,6 +2,7 @@ class Activador:
     def __init__(self):
         self.activado = False
 
+
     def swap(self):
 
         if self.activado:

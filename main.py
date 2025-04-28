@@ -4,7 +4,6 @@ import win32con
 import time
 import random
 import subprocess
-from press import press_key, release_key
 
 
 CENTRO_PANTALLA_XY = (891, 496)
